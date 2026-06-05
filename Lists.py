@@ -6,7 +6,23 @@ provinces =['Eastern Cape', 'Free State', 'Gauteng', 'KwaZulu-Natal', 'Limpopo',
 
 #print the list
 print(provinces) #This method will print the entire list as it is, includind characters and brackets.
+    """
+    Print Output:
+['Eastern Cape', 'Free State', 'Gauteng', 'KwaZulu-Natal', 'Limpopo', 'Mpumalanga', 'North West', 'Northern Cape', 'Western Cape']
+    """
 
 #To print each item in the list separately, we can use a for loop:
 for i in provinces:
     print(i)
+    
+    """
+    Eastern Cape
+Free State
+Gauteng
+KwaZulu-Natal
+Limpopo
+Mpumalanga
+North West
+Northern Cape
+Western Cape
+    """
