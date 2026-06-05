@@ -59,4 +59,11 @@ print(towns) #This method will print the modified list with 'Matatiel' added at 
 """
 #Insert method does not replace the item at the specified index, but rather shifts the existing items to the right to make room for the new item. In this case, 'Matatiel' is inserted at index 0, and all other items are shifted one position to the right.
 
+#using del method
+#Only use del when you know the position of the item you want to remove. 
+del towns[0] #This method will remove the item at index 0, which is 'Matatiel'.
+print(towns) #This method will print the modified list with 'Matatiel' removed from the list.
+"""['East London', 'Bloemfontein', 'Johannesburg', 'Durban', 'Polokwane', 'Nelspruit', 'Mahikeng', 'Kimberley', 'Cape Town', 'Mthatha']
+"""
+
 
