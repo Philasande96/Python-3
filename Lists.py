@@ -45,3 +45,18 @@ Newly implemented
 ['East London', 'Bloemfontein', 'Johannesburg', 'Durban', 'Polokwane', 'Nelspruit', 'Mahikeng', 'Kimberley', 'Cape Town']
 """
 
+#Append
+towns.append('Mthatha') #This method will add 'Mthatha' to the end of the list.
+print(towns) #This method will print the modified list with 'Mthatha' added at the end.
+"""
+['East London', 'Bloemfontein', 'Johannesburg', 'Durban', 'Polokwane', 'Nelspruit', 'Mahikeng', 'Kimberley', 'Cape Town', 'Mthatha']
+"""
+#insert method
+towns.insert(0, 'Matatiel') #This method will insert 'Matatiel' at the beginning of the list (index 0).
+print(towns) #This method will print the modified list with 'Matatiel' added at the beginning.
+"""
+['Matatiel', 'East London', 'Bloemfontein', 'Johannesburg', 'Durban', 'Polokwane', 'Nelspruit', 'Mahikeng', 'Kimberley', 'Cape Town', 'Mthatha']
+"""
+#Insert method does not replace the item at the specified index, but rather shifts the existing items to the right to make room for the new item. In this case, 'Matatiel' is inserted at index 0, and all other items are shifted one position to the right.
+
+
