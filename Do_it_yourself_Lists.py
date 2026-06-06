@@ -19,4 +19,3 @@ for i in names:
 #3-2. Greetings: Start with the list you used in Exercise 3-1, but instead of just printing each person's name, print a message to them. The text of each message should be the same, but each message should be personalized with the person's name.
 for r in names:
     print("Hello " + r + ", how are you doing today?") #This method will print a personalized message for each person in the list, using their name. The message will be the same for each person, but it will be personalized with their name.     
-    
