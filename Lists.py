@@ -66,4 +66,16 @@ print(towns) #This method will print the modified list with 'Matatiel' removed f
 """['East London', 'Bloemfontein', 'Johannesburg', 'Durban', 'Polokwane', 'Nelspruit', 'Mahikeng', 'Kimberley', 'Cape Town', 'Mthatha']
 """
 
+#working with nested  for loop on lists
+
+subjects =[['Mathematics', 'Physical Science', 'Life Science'], ['Accounting', 'Business Studies', 'Economics'], ['History', 'Geography', 'Life Orientation']]
+
+print("\n \nSubjects are : \n")
+for i in subjects:
+    for j in i:
+        print(j) #This method will print each subject in the nested list separately.
+        
+"""Mathematics
+Physical Science
+Life Science   """
 
