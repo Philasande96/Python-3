@@ -24,4 +24,9 @@ print(items) #output: ['apple', 'grape']
 
 #Using pop() method
 #use pop() method when you want to remove an element and also want to use it later
-#e.g You may want to remove the user to the list of active user and add to the list of inactive users, in this case pop() method is ideal.
+#e.g You may want to remove the user to the list of active users and add to the list of inactive users, in this case pop() method is ideal.
+
+users = ["Alice", "Bob", "Charlie", "Philasande"]
+popped_user = users.pop() #removing the last element from the list and storing it in a variable
+print(users) #output: ['Alice', 'Bob', 'Charlie']
+print(popped_user) #output: 'Philasande'    
