@@ -18,4 +18,33 @@ invitees.remove(unable_to_attend)#remove the name of the guest who can't make it
 new_invitee = 'Nikola Tesla'#declare the name of the new guest
 invitees.append(new_invitee)#add the new guest to the list of invitees
 for invitee in invitees:#loop through the updated list of invitees
-    print(f"Dear {invitee}, I would like to invite you to dinner. It would be an honor to have you as my guest.")   
+    print(f"Dear {invitee}, I would like to invite you to dinner. It would be an honor to have you as my guest.")    
+print()
+
+#using sort and sorted methods to sort the list
+new_list_cars = ['Toyota', 'Honda', 'Ford', 'BMW', 'Audi']#declare a list of cars
+print("Original list of cars:", new_list_cars)  
+
+print("\n")
+new_list_cars.sort(reverse=True)#sort the list of cars in place
+print("Sorted list of cars (using sort()):", new_list_cars)
+
+#try it yourself in  Sorting the Lists
+#Sort method 
+myList = ['banana', 'apple', 'cherry', 'date']#declare a list of fruits
+print("Original list of fruits:", myList)
+myList.sort()#sort the list of fruits in place
+print("Sorted list of fruits (using sort()):", myList)
+
+#Sorted function
+myList2 = ['grape', 'fig', 'elderberry', 'honeydew']#declare another list of fruits
+print("\nOriginal list of fruits:", myList2)
+sorted_list = sorted(myList2)#sort the list of fruits and create a new sorted list
+print("Sorted list of fruits (using sorted()):", sorted_list)
+
+
+
+
+
+
+
