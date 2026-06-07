@@ -29,4 +29,11 @@ print(items) #output: ['apple', 'grape']
 users = ["Alice", "Bob", "Charlie", "Philasande"]
 popped_user = users.pop() #removing the last element from the list and storing it in a variable
 print(users) #output: ['Alice', 'Bob', 'Charlie']
-print(popped_user) #output: 'Philasande'    
+print(f'user that is removed from active users is: {popped_user}')#output: 'Philasande'    
+
+
+#you can also pop any item in the list by using the index number  of that item
+popped_user = users.pop(1) #removing the element at index 1 (which is "Bob") and storing it in a variable  
+print(users) #output: ['Alice', 'Charlie']
+print(f'user that is removed from active users is: {popped_user}')#output: 'Bob'
+
