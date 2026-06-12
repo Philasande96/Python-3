@@ -43,6 +43,10 @@ sorted_list = sorted(myList2)#sort the list of fruits and create a new sorted li
 print("Sorted list of fruits (using sorted()):", sorted_list)
 
 
+mylist = list(range(1,11))
+
+
+print("list in index number 6: ", mylist[5])
 
 
 
