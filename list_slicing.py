@@ -26,6 +26,7 @@ print('The last three items in the list are : ', my_integers[7:10])
 
 #List comprehension : same as for loop and using range method to create a list of squares of numbers from 1 to 10
 
+print('\nNew list derived from the old list: \n')
 myold_list = [value**2 for value in range(1,11)] #create a new list of squares of numbers from 1 to 10    
 print(myold_list)
     
