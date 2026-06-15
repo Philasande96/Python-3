@@ -4,3 +4,11 @@ Country: South Africa
 
 ***When someone would like to make changes to Python programming language, they're required to submit PYTHON ENHANCEMENT PROPOSAL (PEP).
 
+NB: Given the choice, to write a code that is easier to read or easier to write, always for the code that is easier to read. (refer to the ZEN of Python)
+
+Guidelines for clean code
+1. Indentation
+- It is recommended that you use 4 spaces to make a single indentation. DO NOT mix indentation and tabs, if you use SPACEBAR tab it four times,  else use single tabs. 
+
+
+                                I will add others in no time 
