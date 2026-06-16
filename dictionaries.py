@@ -27,3 +27,17 @@ print('\nWe have the following  extras')
 print('\n', hotel_menu['extras'], '\n')#display the items in an extras  menu, but this include the square brackets and ' '
 for i in hotel_menu['extras']:
     print(i)#display items in the extras menu omitting the square brackets and ' '
+
+#Now lets add  new  items in the menu
+hotel_menu['beverages'] = ['beer','mqombothi','ginger','whiskey','brandy']
+print(hotel_menu)
+
+#Sometimes you can start with an empty dictionary. To start with an empty dictionary, declare the  dictionary name followed by  empty curley braces.
+#e.g dictionary_name={} --> empty braces {}
+domestic_animals ={} #declaring the empty dictionary 
+
+#add new animals in the domestic animals dictionary
+domestic_animals['bipedals']=['Hen','ostrich']#add two animals in the bipedals value-pair key
+domestic_animals['quard-pedals']=['cow','dog','horse','cat']
+print(domestic_animals['bipedals'])
+
