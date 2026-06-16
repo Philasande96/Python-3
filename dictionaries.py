@@ -24,6 +24,6 @@ print(my_new_dict['any_nums'])
 hotel_menu ={'morning': ['coffee','tea','milk','bread','corn flakes','coco pops'], 'lunch':['chicken','mutton','pork','rice','pap'],'dinner':['rice','pap','samp', 'beef stew','mutton stew'], 'extras':['dessert','biscuits','juice','pop corns']}
 
 print('\nWe have the following  extras')
-print('\n', hotel_menu['extras'], '\n')
+print('\n', hotel_menu['extras'], '\n')#display the items in an extras  menu, but this include the square brackets and ' '
 for i in hotel_menu['extras']:
-    print(i)
+    print(i)#display items in the extras menu omitting the square brackets and ' '
