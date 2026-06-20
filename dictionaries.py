@@ -68,4 +68,30 @@ del to_do['Afternoon']
 
 print(to_do)
 
+#Looping through the dictionary, either through the keys, value keys or value-pairs
+
+subject={'science':['Phyics','biology','agcri-science','metallogical science'],'Humanities':['Law','History','Divinity'],'Engineering':['Electrical','Mechanical','Civil eng','Mechatronics','Architectural Engineering','Software Eng']}
+
+#Looping through only keys
+for i in subject:
+    print(i) #output: science Humanities
+
+#looping in both keys and values
+for key,value in subject.items():
+    print('\nKey:' , key)
+    print('\nValue:' , value)
+
+"""
+Output of the above: 
+Key: science
+
+Value: ['Phyics', 'biology', 'agcri-science', 'metallogical science']
+
+Key: Humanities
+
+Value: ['Law', 'History', 'Divinity']
+"""
+
+    
+
 
