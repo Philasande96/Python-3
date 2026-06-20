@@ -2,6 +2,7 @@
 #What is a dictionary? A Python dictionary is a collection of items, similar to lists and tuples. However, unlike lists and tuples, each item in a dictionary is a key-value pair (consisting of a key and a value).
 #We use curly braces {} to declare the dictionary
 
+# sourcery skip: remove-dict-keys
 my_son = {'Name': 'Liqhame', 'Surname': 'Mathafeni', 'age': 3, 'Gender': 'Male', 'Location': 'Dutywa'} #Declaring the dictionary 
 print(f'hellow {my_son['Name']} {my_son['Surname']} we have discovered that you are {my_son["age"]}yrs,{my_son['Gender']} type of gender and you are living in {my_son['Location']} \n')
 
@@ -92,6 +93,10 @@ Key: Humanities
 Value: ['Law', 'History', 'Divinity']
 """
 
-    
+#looping through only Keys using keys() method 
+for i in subject.keys():
+    print(i)  
+#they above code will list only the keys in the dictionary
+ 
 
 
