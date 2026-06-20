@@ -10,7 +10,7 @@ print(f'hellow {my_son['Name']} {my_son['Surname']} we have discovered that you 
 value_list =[1,2,3,5,6,]
 value_tuple =(3,4,5,6,7,8,81,23)
 
-my_new_dict = {'real_numbers':  value_list, 'any_nums': value_tuple }
+my_new_dict ={'real_numbers':  value_list, 'any_nums': value_tuple}
 
 #Embedding lists and tuples inside a dictionary and access the members 
 
@@ -18,7 +18,7 @@ print(my_new_dict['any_nums'])
 
 #A key-value pair is a set of values associated to each other.
 #when you call a key, Python will return the value associated with that key.
-#Dictionaries are dynamic, meaning you can add or introduce new members (key-value pairss) at anytime.
+#Dictionaries are dynamic & mutable, meaning you can add or introduce new members (key-value pairss) at anytime.
 #Let's create a food list dictionary and amend or add new members
 
 hotel_menu ={'morning': ['coffee','tea','milk','bread','corn flakes','coco pops'], 'lunch':['chicken','mutton','pork','rice','pap'],'dinner':['rice','pap','samp', 'beef stew','mutton stew'], 'extras':['dessert','biscuits','juice','pop corns']}
@@ -40,4 +40,32 @@ domestic_animals ={} #declaring the empty dictionary
 domestic_animals['bipedals']=['Hen','ostrich']#add two animals in the bipedals value-pair key
 domestic_animals['quard-pedals']=['cow','dog','horse','cat']
 print(domestic_animals['bipedals'])
+
+#update the dictionary (already declared dictionary)
+#use curley braces to modify the dictionary 
+#Lets change the current quard-pedals and add new items\members like:  lion, leopard, zebra
+
+domestic_animals={'quard-pedals':['lion','leopard','zebra']} #add new members  of the quard-pedals animals in the domestic_animals dictionary
+
+#display newly declared members 
+print(domestic_animals['quard-pedals'])
+
+#How to  use del method
+#Sometimes you might want to remove certain parts in your dictionaries without affecting the entire dictionary 
+#Lets delete the members of the  bipedals
+
+#del domestic_animals['bipedals']#deleting the bipedal key-value pair
+print(domestic_animals)
+
+domestic_animals['bipedals']=[]#declaring an empty key-value pair of bipedals arrays
+
+to_do={'morning':['cleaning room','bath','prep bk'], 'day':['pre lunch','fetch kids from school','wash their uniform'],'Afternoon':['Help kids with homeworks', 'prep dinner']}
+print('\nMy to-do list \n')
+
+for i in to_do['morning']:
+    print(i)
+del to_do['Afternoon']
+
+print(to_do)
+
 
