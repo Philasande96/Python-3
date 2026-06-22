@@ -2,7 +2,7 @@
 #What is a dictionary? A Python dictionary is a collection of items, similar to lists and tuples. However, unlike lists and tuples, each item in a dictionary is a key-value pair (consisting of a key and a value).
 #We use curly braces {} to declare the dictionary
 
-# sourcery skip: remove-dict-keys
+# sourcery skip: merge-dict-assign, remove-dict-keys
 my_son = {'Name': 'Liqhame', 'Surname': 'Mathafeni', 'age': 3, 'Gender': 'Male', 'Location': 'Dutywa'} #Declaring the dictionary 
 print(f'hellow {my_son['Name']} {my_son['Surname']} we have discovered that you are {my_son["age"]}yrs,{my_son['Gender']} type of gender and you are living in {my_son['Location']} \n')
 
@@ -35,7 +35,7 @@ print(hotel_menu)
 
 #Sometimes you can start with an empty dictionary. To start with an empty dictionary, declare the  dictionary name followed by  empty curley braces.
 #e.g dictionary_name={} --> empty braces {}
-domestic_animals ={} #declaring the empty dictionary 
+domestic_animals ={} #declaring the empty dictionary
 
 #add new animals in the domestic animals dictionary
 domestic_animals['bipedals']=['Hen','ostrich']#add two animals in the bipedals value-pair key
@@ -95,8 +95,39 @@ Value: ['Law', 'History', 'Divinity']
 
 #looping through only Keys using keys() method 
 for i in subject.keys():
-    print(i)  
+    print(i.capitalize(),'\n')  
 #they above code will list only the keys in the dictionary
- 
+#Alternatively this code can be written as follows 
+for k in subject:
+    print(k)
+#this code will provide the same output
+
+
+#Looping through dicts keys in order
+#use sorting methods to sort out the dictionary
+favorites ={'food':['pizza','burger','chicken'],'drinks':['coffee','tea','milk'],'desserts':['cake','ice cream','cookies'],'snacks':['chips','candy','popcorn'],'fruits':['apple','orange','banana'],'vegetables':['carrot','potato','tomato']} #We will use sorted() method to sort the dictionary
+
+print('Unfavorite favorites\n')
+for i in favorites.keys():
+    print(i)
+
+print('\n\n')#print a new line
+
+#print out the favorites in alphabetical order
+for i,k in sorted(favorites.items()):
+    print('\nKey:',i,'\nValue:',k)#Showing keys and values in alphabetical order
+print('\n\n')
+
+#looping through the dictionary in reverse order
+for i,k in sorted(favorites.items(),reverse=True):
+    print('\nKey:',i,'\nValue:',k)
+print('\n\n')
+
+#looping through all values only in a dictionary
+for favs in favorites.values():
+    print(favs)
+print('\n\n')
+
+
 
 
