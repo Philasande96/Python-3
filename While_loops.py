@@ -52,6 +52,7 @@ while state:
     if choice == 'yes' or choice == 'Yes':
         print('Okay, I will stop now')
         state = False
+        break
     elif choice == 'no' or choice == 'No':
         print('Okay, I will keep going')
         choice = input()
