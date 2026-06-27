@@ -1,6 +1,10 @@
 Guidelines on writing clean Python Code
 By: M. Philasande
 Country: South Africa
+Year 2026
+Python Version: 3.8
+
+***Python is a very popular language and it is very easy to write clean code.
 
 ***When someone would like to make changes to Python programming language, they're required to submit PYTHON ENHANCEMENT PROPOSAL (PEP).
 
