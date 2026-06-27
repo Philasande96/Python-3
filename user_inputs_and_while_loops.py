@@ -105,5 +105,18 @@ while counter < 20:
         break
 print('\n \n')
 
+#using continue to while loop 
+#Contnue allows you to skip the code section where the condition is is true and continue to the next iteration of the loop
+
+#In the following code, I will use do while to print numbers from 1 to 10 and print 5 , after five is printed the remaining values will be squared
+start_val = 1
+end_val = 10
+while start_val <= end_val:
+    print(start_val)
+    start_val += 1
+    if start_val == 5:
+        print(f"I have  reached {start_val}\nRemaining values will be squared")
+        continue
+    
 
 
