@@ -43,7 +43,7 @@ while current_number <= 5:
     print(current_number)
     current_number += 1
     
-#using flag  in the while loop
+#using flag and break methods  in the while loop
 
 state = True
 while state:
@@ -61,3 +61,21 @@ while state:
         print('I am a loop, I will keep going until you stop me. Do you want to stop me?')
         choice = input()
 print('\n\n')
+
+
+#using continue method in the while loop
+#We will create count of 10  and we will print the count
+count = 1
+while count <= 10:
+    print(count)
+    count += 1
+    if count == 5:
+        continue
+print('\n\n')
+
+#Avoiding infinite loops
+x = 1
+while x < 10:
+    print(x)
+    x += 1 #the loop will stop when x is equal to 10
+#if we can make a mistake of not incrementing the value of x by 1 in the loop, this will be infinite loop.
