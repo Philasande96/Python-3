@@ -28,3 +28,18 @@ double_quote = "I am a double quote"
 
 my_self = "I'm Philasande Mathafeni, Liqhame's father"
 print(my_self) #Output I'm Philasane Mathafeni, Liqhame's father
+
+
+#Multiline string. Let's say you want to assign a paragraph to your variable, you can do that by using triple/three  double or single  quotes 
+
+about_Me = """
+Philasande Mathafeni is a South African software engineer, entrepreneur, and tech innovator based in Queenstown. He is the founder and CEO of Macro-soft (Pty) Ltd, a technology company offering IT infrastructure solutions, web and app development, and technical support.
+"""
+print(about_Me) #Output Philasande Mathafeni is a South African software engineer, entrepreneur, and tech innovator based in Queenstown. He is the founder and CEO of Macro-soft (Pty) Ltd, a technology company offering IT infrastructure solutions, web and app development, and technical support.
+
+#In Python strings are arrays, unlike any other language. Python does not have single character data type.
+town = "Johannesburg"
+#we can access any character using square brackets and the index number of the character in the name of  town assigned above. 
+print(town[0]) #Output J
+print(town[1]) #Output o
+
