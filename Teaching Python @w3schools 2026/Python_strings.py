@@ -68,6 +68,7 @@ for k in town:
         print("We have k in the town")
     else:
         print("Nothing")
+        break
 print("done!")
 
 #To check if a certain character or Phrase IS NOT in the string literal we will use 'not in' key word
@@ -110,3 +111,98 @@ print(myString[-5:-2]) #Output yth
 |  0   |  1   |  2   |  3   |  4   |  5  | #Positive index
 | -6   | -5   | -4   | -3   | -2   | -1  | #Negative index
 """
+
+#Python Modify strings 
+#Python has set of of built-in methods that can be used to modify strings.
+
+#Upper case-> used to return the literal in upper case 
+
+First_name = 'philasande mathafeni'
+print(First_name.upper()) #Output PHILASANDE
+
+#Lower case -> used to return string literal in lower case 
+print(First_name.lower()) #Output philasande
+
+#Capitalize -> used to capitalize the first character in  a string\sentence
+print(First_name.capitalize()) #Output Philasande mathafeni
+
+#Removing the Whitespace
+#Whitespace are the spaces left before and after (beginning or end) of the string
+#use strip() method to perform such activity 
+example = " Philasande Mathafeni "
+print(len(example)) #Output 22 -> Note this includes spaces 
+stripped_example = example.strip()
+print(len(stripped_example)) #Output 20 -> Note this does not include spaces, meaning  2 spaces are removed
+
+#Replacing a string with another string. 
+#We will use replace() method to do so. Replace method takes to arguments\parameters  to  successfully perform this duty, string to be replaced and the string to replace with
+
+names = "Liqhame Nqobile"
+replaced_names = names.replace('Liqhame', 'Philasande')
+print(replaced_names) #Philasande Nqobile
+#We will use for loop and if statement to check if the string has been replaced successfully
+for i in names:
+    if 'Philasande' in names:
+        print("String has been replaced successfully \n")
+        print(names.replace('Liqhame', 'Philasande'))
+        #Output Philasande Nqobile
+        print('\n \n')
+        break
+    else:
+        print("String has not been replaced successfully")
+        break
+        
+#Splitting a string into a list of substrings.
+#We will use split() method to perform this activity. The split() method splits a string
+naming = 'Philasande mathafeni dlamini'
+print(naming.split()) #Output ['Philasande', 'mathafeni', 'dlamini'] -> Note that the default separator is any whitespace
+
+#String concatinating\merging 
+#We will use the + operator to concatinate two strings or to combine  strings 
+
+name = 'Philasande'
+surname = 'Mathafeni'
+
+fullname = name + " " + surname #concatinating two strings using + operator
+print(fullname) #Output Philasande Mathafeni
+
+#NOTE : String formatting and character escape, I have dealt with in Python 3 main folder
+
+
+#String Methods
+
+#capitalize() : converts the first character in the string 
+txt = 'i am fine, i hope you are enjoying  your day'
+print(txt.capitalize() + "\n") #Output I am fine, i hope you are enjoying  your day
+#casefold(): converts the string into lower case
+txt = 'I AM FINE, I HOPE YOU ARE ENJOYING  YOUR DAY'
+print(txt.casefold()) #Output i am fine, i hope you are enjoying  your day
+
+#center(): returns centerd string
+
+names = 'Philasande'
+print(names.center(20)) #Output '     Philasande      ' -> Note that the string is centered in a field of 20 characters wide, with spaces added to the left and right
+
+#count(): returns the number of times a specified value occurs in a string
+txt = 'I am fine, I hope you are enjoying your day'
+print(txt.count('I')) #Output 2 -> Note that the count() method is case-sensitive, so it will only count the occurrences of the exact string specified.
+
+#encode(): returns encoded version of a string 
+mine = 'Philasande'
+print(mine.encode()) #Output b'Philasande' -> Note that the encode() method returns a bytes object, which is a sequence of bytes. The bytes object is then encoded into a string using the encoding specified.
+
+#endswith(): returns True if the string ends with the specified value, otherwise returns False
+mine = 'Philasande'
+print(mine.endswith('nde')) #Output True
+
+#expandtabs(): returns a copy of the string with tabs expanded
+mine = 'I\tam\tfine'
+print(mine.expandtabs()) #Output I        am        fine
+
+#format(): formats specified values in a string
+txt = 'I am {} and I am {} years old'
+print(txt.format('Philasande', 30)) #Output I am Philasande and I am 30 years old
+
+#find(): returns the index of the first occurrence of the specified value in the string, or -1 if the value is not found
+mine = 'Philasande'
+print(mine.find('nde')) #Output 7 -> Note that the find() method is case-sensitive, so it will only find the first occurrence of the exact string specified.
