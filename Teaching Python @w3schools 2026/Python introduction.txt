@@ -1,0 +1,5 @@
+What is Python?
+Firstly, Python  programming  was invernted by Guido van Rossum in 1991
+Python is a programming language that is used to create scripts, programs, and applications. It is a high-level, interpreted language, which means that the code is interpreted line by line, and the interpreter is not involved in the execution of the program. Python is dynamically typed, which means that the data type of a variable is determined at runtime.
+
+Python is a general-purpose language, which means that it can be used for many different purposes.

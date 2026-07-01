@@ -2,7 +2,7 @@ Guidelines on writing clean Python Code
 By: M. Philasande
 Country: South Africa
 Year 2026
-Python Version: 3.8
+Python Version: 3.14.6
 
 ***Python is a very popular language and it is very easy to write clean code.
 
@@ -15,4 +15,4 @@ Guidelines for clean code
 - It is recommended that you use 4 spaces to make a single indentation. DO NOT mix indentation and tabs, if you use SPACEBAR tab it four times,  else use single tabs. 
 
 
-                                I will add others in no time 
+*********** I will add others in no time ************
