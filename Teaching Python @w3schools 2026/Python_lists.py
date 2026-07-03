@@ -17,12 +17,12 @@ fruits = ['apple', 'banana', 'orange', 'apple', 'mango']
 print(fruits) #Output ['apple', 'banana', 'orange', 'apple', 'mango']
 
 #List length
-#To determine how manu members\elements a list has, you can use the len() function.
+#To determine how many members\elements a list has, you can use the len() function.
 fruits = ['apple', 'banana', 'orange', 'apple', 'mango']
 print(len(fruits)) #Output 5
 
 #Lists datatypes 
-#Lists can be of any datatypes.
+#Lists can be of any datatype.
 fruits = ['apple', 10, True, None]
 print(type(fruits)) #Output <class 'list'>
 print(type(fruits[0])) #Output <class 'str'>
@@ -35,4 +35,20 @@ print(type(fruits[1])) #Output <class 'int'>
 fruits = ['apple', 'banana', 'orange', 'apple', 'mango']
 print(type(fruits)) #Output <class 'list'>
 print(type(fruits[0])) #Output <class 'str'>
+
+
+#The list() Constructor
+"""
+The list() constructor in Python is a built-in function used to instantiate a new list object, either by creating an empty list or by converting an existing iterable into a list
+"""
+newlist = list((1, 2, 3, 4, 5))#Take note that we used simple parantheses not square.
+print(type(newlist)) #Output <class 'list'>
+print(newlist) #Output [1, 2, 3, 4, 5]
+
+dup= list([1, 2, 3, 4, 5]) #Take note that we used square brackets not parantheses.
+print(type(dup)) #Output <class 'list'>
+print(dup) #Output [1, 2, 3, 4, 5]
+#list() constructor gives us an opportunity or variety of options on what parantheses to use, square or simple.
+
+
 
