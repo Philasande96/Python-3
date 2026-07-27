@@ -36,4 +36,6 @@ print(f'user that is removed from active users is: {popped_user}')#output: 'Phil
 popped_user = users.pop(1) #removing the element at index 1 (which is "Bob") and storing it in a variable  
 print(users) #output: ['Alice', 'Charlie']
 print(f'user that is removed from active users is: {popped_user}')#output: 'Bob'
+print("hello world")
+
 
