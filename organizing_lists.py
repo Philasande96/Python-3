@@ -40,5 +40,15 @@ print(nums) #Output: [1,2,3,4,5] --> Method 1
 nums = list(range(1,6)) #Method 2
 print(nums) #Output: [1,2,3,4,5]
 
+#Lets create a list using step 
+even_nums = list(range(2,11,2)) #Method 3
+print(even_nums) #Output: [2,4,6,8,10]
 
+#Insert squares of the even numbers in the squares variable
+
+squares = [] #create an empty list
+for i in even_nums:
+    squares.append(i**2) #appending the square of the even numbers to the list
+    
+print(squares) #Output: [4,16,36,64,100]
 
